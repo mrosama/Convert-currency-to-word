@@ -1,4 +1,4 @@
-# [Mysqli Essential DB Class](https://github.com/mrosama/Convert-currency-to-word)
+# [Convert currency to word](https://github.com/mrosama/Convert-currency-to-word)
 
 Class.Currency DB Class Convert number to text: Format money amounts for Egypt and Saudi Arabia
 
@@ -21,13 +21,12 @@ It can take a given amount in the currency of Egypt or Saudi Arabia and return i
 
 ## Usage
 
- <code>
- <?php
+ ```
  require_once 'Class.Currency.php';
 
  $Money=new Currency();
 
-//convert to Egypt
+ //convert to Egypt
 
  echo $Money->Eg(3500);
  echo "<br/>";
@@ -40,9 +39,8 @@ It can take a given amount in the currency of Egypt or Saudi Arabia and return i
  echo "<br/>";
  echo $Money->Sa(590.60);
  echo "<hr/>";
-
- ?>
- </code>
+ 
+```
 
 
 ## Documentation
