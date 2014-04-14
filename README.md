@@ -1,31 +1,49 @@
-# [Mysqli Essential DB Class](https://github.com/mrosama/Mysqli-Essential-DB-Class)
+# [Mysqli Essential DB Class](https://github.com/mrosama/Convert-currency-to-word)
 
-Mysqli Essential DB Class This class can access MySQL databases with mysql and mysqli.
-It comes with a factory class that can create objects of driver classes to access a MySQL database
-using either the mysql or mysqli extensions.
+Class.Currency DB Class Convert number to text: Format money amounts for Egypt and Saudi Arabia
 
-The drivers can establish connections, execute queries, retrieve the query results into arrays, display query results in paginated listings, execute backup procedures and serve the backup file for download.
-
-* Source: [https://github.com/mrosama/Mysqli-Essential-DB-Class](https://github.com/mrosama/Mysqli-Essential-DB-Class)
+* Source: [https://github.com/mrosama/Convert-currency-to-word](https://github.com/mrosama/Convert-currency-to-word)
 * Email: [osama_eg@outlook.com](osama_eg@outlook.com)
 
 
 
 ## Quick start
 
-Clone the git repo - `git clone git://github.com/mrosama/Mysqli-Essential-DB-Class.git` -
-or [download it](https://github.com/mrosama/Mysqli-Essential-DB-Class/archive/master.zip)
+Clone the git repo - `git clone git://github.com/mrosama/Convert-currency-to-word.git` -
+or [download it](https://github.com/mrosama/Convert-currency-to-word/archive/master.zip)
 
 
 ## Features
-This class implements a MySQL database access wrapper using MySQLi or mysql. It can:
+This class can be used to format money amounts for Egypt and Saudi Arabia.
+It can take a given amount in the currency of Egypt or Saudi Arabia and return its text representation.
 
-* Establish connections to MySQL server hosts
-* Execute SQL queries
-* Determine the number of result rows or affected rows
-* Retrieve query results into arrays
-* pagination
-* Backup database
+* Spell number into text in Egypt,Saudi Arabia currency system
+
+## Usage
+
+ <code>
+ <?php
+ require_once 'Class.Currency.php';
+
+ $Money=new Currency();
+
+//convert to Egypt
+
+ echo $Money->Eg(3500);
+ echo "<br/>";
+ echo $Money->Eg(590.60);
+ echo "<hr/>";
+
+ //convert Saudi Arabia
+
+ echo $Money->Sa(3500);
+ echo "<br/>";
+ echo $Money->Sa(590.60);
+ echo "<hr/>";
+
+ ?>
+ </code>
+
 
 ## Documentation
 
@@ -34,7 +52,3 @@ documentation is bundled with the project, which makes it readily available for
 offline reading and provides a useful starting point for any documentation you
 want to write about your project.
 
-
-## Contributing
-
-Anyone and everyone is welcome to [contribute](CONTRIBUTING.md).

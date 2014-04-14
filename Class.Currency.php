@@ -4,7 +4,7 @@
  *@Author Osama Salama
  *@Version 0.1
  *@CopyRight 2010,2011
- *@Email osama_eg@live.com
+ *@Email osama_eg@outlook.com
 */
 class Currency {
 
